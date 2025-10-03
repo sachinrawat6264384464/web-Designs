@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  
+  color: white;
+  font-family: Arial, sans-serif;
+  background-image: url("ist.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+
+.nav {
+  max-width: 100vw;
+  height: auto;
+  background: rgba(38, 40, 40,0.1);  /* solid color ke jagah transparent color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  backdrop-filter: blur(10px);        /* background blur */
+  -webkit-backdrop-filter: blur(10px); /* Safari ke liye */
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(5, 245, 241);
+}
+
+/* Menu */
+.menu {
+  margin-right:0%;
+  padding-top: 10px;/* Logo aur menu ke beech gap */
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 80px; /* Links ke beech gap */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+ font-size: 19px;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: rgb(5, 245, 241);
+}
+input{
+width: 60%;
+height: 5vh;
+ border: 2px solid rgb(0, 234, 255);
+ border-radius: 3px;
+background: none;
+color: aliceblue;
+border-right: none;
+ 
+}
+
+input:hover{
+box-shadow: 0 0 10px aqua;
+}
+.btn1{
+padding: 24px;
+ margin-right: 80px;
+ 
+}
+.btn2{
+border: none;
+width: 26%;
+height: 5vh;
+border-radius: 5%;background-color: aqua;
+margin-right: 0px;
+}
+.btn2:hover{
+box-shadow: 0 0 10px aqua;
+}
+.hilight{
+color: aqua;
+}
+.info2{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+
+}
+.info {
+
+
+padding: 10% 0;
+margin-left: 17%;
+
+}
+#as{
+
+background-color: aqua;
+width: 13%;
+height: 40px;
+font-size: 17px;
+border-radius: 10px;
+}
+#as:hover{
+box-shadow: 0px 0px 10px aqua;
+
+}
+.form{
+width: 20vw;
+height: 30vh;
+background-color: brown;
+border-radius: 10px;
+text-align: center;
+flex-wrap: wrap;
+
+
+}
+.login-box {
+  width: 20vw;
+  background: rgba(116, 118, 118, 0.6); 
+
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin-right: 10%;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: cyan;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+
+@media (max-width: 1224px) {
+      .menu ul li a {
+  text-decoration: none;
+  color: white;
+ font-size: 10px;
+  transition: color 0.3s ease;
+}
+.nav{
+    flex-direction: column; /* text upar, photo niche */
+    
+  }
+.btn1{
+  margin-left: 20%;
+  padding:0px 0px;
+  
+  }
+   .btn2{
+  padding-top: 10px;
+  width: 26%;
+  height: 4vh;
+ }
+ input{
+ width: 40%;
+height: 4vh;
+padding: 0px 0px;
+ }
+  #as{
+   
+ width: 30%;
+ 
+ }
+ .login-box{
+ margin-left: 34%;
+ width: 32vw;
+ }
+  }
+@media (max-width: 435px) {
+  .nav{
+    width: 100%;
+  }
+  
+  .menu ul li a {
+  text-decoration: none;
+  color: white;
+ font-size: 14px;
+  transition: color 0.3s ease;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Links ke beech gap */
+
+}
+.btn1{
+  margin-left: 33%;
+  padding: 2px 0px;
+  }
+input{
+width: 80%;
+height: 3vh;
+}
+   .btn2{
+  margin-left: 18%;
+  width: 40%;
+  height: auto;
+ }
+ #as{
+   
+ width: 30%;
+ 
+ }
+ .form{
+ width: 80%;
+ height: 200px;
+ padding: 10px 0px;
+ }
+ .button{
+ width: 18%;
+ font-size: 20px;
+ 
+ }
+ #name{
+ width: 60%;
+ 
+ }
+ #Password{
+ width: 60%;
+ 
+ }
+ .login-box{
+ margin-left: 40px;
+ }
+ }
+ 
+ @media (max-width: 768px) {
+  .login-box{
+ margin-left: 30%;
+ }
+ .login-box{
+  width: 40vw;
+ }}
